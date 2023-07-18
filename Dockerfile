@@ -1,0 +1,16 @@
+FROM node:18-alpine AS build-env
+
+WORKDIR /app
+
+COPY . ./
+
+RUN npm install
+
+RUN npm run build --dev
+
+
+FROM nginx:1.17.1-alpine
+
+COPY --from=build-env /app/dist/app-catalogo/ /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]
