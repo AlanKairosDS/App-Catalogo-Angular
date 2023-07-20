@@ -6,7 +6,7 @@ COPY . ./
 
 RUN npm install
 
-RUN npm run build --dev
+RUN npm run build --configuration=development
 
 
 FROM nginx:1.17.1-alpine

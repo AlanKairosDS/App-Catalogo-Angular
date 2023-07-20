@@ -13,11 +13,14 @@ import * as TablerIcons from 'angular-tabler-icons/icons';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { ModalComponent } from './components/modal/modal.component';
+import { LoaderComponent } from './components/loader/loader.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, ModalComponent, LoaderComponent, HeaderComponent, FooterComponent, HomeComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

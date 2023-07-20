@@ -1,12 +1,12 @@
-<mat-toolbar class="topbar" style="background-color: #074e67">
+<mat-toolbar class="topbar" style="background-color: #ee3540">
   <div mat-icon-button aria-label="Notifications">
     <div id="logo">
-      <!--
-      <img src="assets/images/logos/angular.svg" width="60" alt="Logotipo" />
-      -->
+      <img src="assets/images/logos/movie_logo.png" width="50" alt="Logotipo" />
     </div>
   </div>
-  <span id="brand"></span><span id="brand2"></span>
+  <!--
+  <span id="brand">Cat</span><span id="brand2">Flip</span>
+  -->
 
   <span class="flex-1-auto"></span>
 
@@ -16,20 +16,32 @@
     </mat-icon>
   </button>
 
-  <!--
   <button mat-icon-button aria-label="Instagram">
     <mat-icon class="d-flex align-items-center" style="color: white">
       <i-tabler name="brand-instagram" class="icon-25 d-flex"> </i-tabler>
     </mat-icon>
   </button>
-  -->
 
   <mat-menu #profilemenu="matMenu" xPosition="before" class="topbar-dd cardWithShadow">
     <a mat-menu-item>
-      <mat-icon class="d-flex align-items-center" style="color: #074e67">
+      <mat-icon class="d-flex align-items-center">
         <i-tabler name="home-2" class="icon-18 d-flex"></i-tabler>
       </mat-icon>
       Inicio
+    </a>
+
+    <a mat-menu-item>
+      <mat-icon class="d-flex align-items-center">
+        <i-tabler name="stack-2" class="icon-18 d-flex"></i-tabler>
+      </mat-icon>
+      Administrar Productos
+    </a>
+
+    <a mat-menu-item>
+      <mat-icon class="d-flex align-items-center">
+        <i-tabler name="category-2" class="icon-18 d-flex"></i-tabler>
+      </mat-icon>
+      Administrar Categorias
     </a>
   </mat-menu>
 </mat-toolbar>

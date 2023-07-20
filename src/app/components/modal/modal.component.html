@@ -1,0 +1,29 @@
+<h2 mat-dialog-title style="background-color: #6ee0f3">
+  {{ header }}
+</h2>
+<mat-dialog-content class="mat-typography" style="text-align: center">
+  <div>
+    <br />
+    <img src="{{ image }}" width="100px" alt="ModalImg" />
+    <br /><br />
+    {{ message }}
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+  <button
+    mat-raised-button
+    *ngIf="buttonSuccess"
+    style="padding: 10px; background-color: #00cc66; font-weight: bold; color: white"
+    mat-dialog-close
+  >
+    {{ msgButtonSuccess }}
+  </button>
+  <button
+    mat-raised-button
+    *ngIf="buttonError"
+    style="padding: 10px; background-color: #ee3540; font-weight: bold; color: white"
+    mat-dialog-close
+  >
+    {{ msgButtonError }}
+  </button>
+</mat-dialog-actions>
